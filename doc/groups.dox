@@ -1,0 +1,33 @@
+
+/**
+@brief The main, catch-all namespace for TEO.
+ */
+namespace teo {}
+
+/**
+ * \defgroup teo-simox-models_libraries teo-simox-models Libraries
+ *
+ * @brief teo-simox-models libraries.
+ *
+ */
+
+/**
+ * \defgroup teo-simox-models_programs teo-simox-models Programs
+ *
+ * @brief teo-simox-models programs.
+ */
+
+/**
+ * \defgroup teo-simox-models_applications teo-simox-models Applications (Collections of Programs)
+ *
+ * @brief teo-simox-models applications (collections of programs).
+ */
+
+/**
+ * \defgroup teo-simox-models_examples teo-simox-models Examples
+ *
+ * @brief teo-simox-models examples.
+ */
+
+
+

@@ -1,0 +1,99 @@
+<Robot Type="BodySimox" RootNode="InicBody">
+		
+	<RobotNode name="InicBody">
+       <Child name="AxialWaist"/>
+	</RobotNode>
+	
+<!--
+	Link 0
+-->
+	
+	<RobotNode name="AxialWaist">
+	   <Joint type="revolute">
+		   <Axis x="0" y="0" z="1"/>
+		   <Limits lo="-45" hi="45" units="degree"/>
+	   </Joint>  
+	   <Visualization>
+		   <File type="Inventor">models/3.0^torso_simple_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="FrontalWaist"/>  
+	</RobotNode>
+   
+<!--
+	Link 1
+-->
+   
+	<RobotNode name="FrontalWaist">
+	   <Joint type="revolute">
+		   <Axis x="0" y="1" z="0"/>
+		   <Limits lo="-10" hi="10" units="degree"/>
+	   </Joint>
+	   <Visualization>
+		   <File type="Inventor">models/3.1^torso_simple_links.wrl</File>
+	   </Visualization>
+<!-- Transformations to the head and the arms -->  
+	   <Child name="TrafoToRightArm"/>
+	   <Child name="TrafoToLeftArm"/>
+	   <Child name="TrafoToHead"/>   
+	</RobotNode>
+   
+<!--
+   Transformation to the RIGHT ARM
+-->
+
+	<RobotNode name="TrafoToRightArm">
+		<Transform>
+			<matrix4x4>
+				<row1 c1="0" c2="-1"  c3="0" c4="0"/>
+				<row2 c1="0" c2="0"  c3="-1" c4="-262.92"/>
+				<row3 c1="1" c2="0" c3="0" c4="305"/>
+				<row4 c1="0" c2="0"  c3="0" c4="1"/>
+			</matrix4x4>
+			<DH a="0" d="0" alpha="-90" theta="-90" units="degree"/>
+		</Transform>
+	    <ChildFromRobot>
+            <File importEEF="true">RightArmSimox.xml</File>
+        </ChildFromRobot>
+	</RobotNode>
+
+<!--
+   Transformation to the LEFT ARM
+-->
+
+	<RobotNode name="TrafoToLeftArm">
+		<Transform>
+			<matrix4x4>
+				<row1 c1="1" c2="0"  c3="0" c4="0"/>
+				<row2 c1="0" c2="1"  c3="0" c4="262.92"/>
+				<row3 c1="0" c2="0" c3="1" c4="305"/>
+				<row4 c1="0" c2="0"  c3="0" c4="1"/>
+			</matrix4x4>
+		</Transform>
+	    <ChildFromRobot>
+            <File importEEF="true">LeftArmSimox.xml</File>
+        </ChildFromRobot>
+	</RobotNode>
+	
+<!--
+   Transformation to the LEFT ARM
+-->
+	
+	<RobotNode name="TrafoToHead">
+		<Transform>
+			<DH a="0" d="305" alpha="0" theta="0" units="degree"/>		
+		</Transform>
+		<ChildFromRobot>
+            <File importEEF="true">HeadSimox.xml</File>
+		</ChildFromRobot>	
+	</RobotNode>
+	
+<!--
+	Trunk Chain
+-->
+	
+	<RobotNodeSet name="TrunkChain" kinematicRoot="AxialWaist">
+		<Node name="AxialWaist"/>
+		<Node name="FrontalWaist"/>
+	</RobotNodeSet>
+	
+</Robot>

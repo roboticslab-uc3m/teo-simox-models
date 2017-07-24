@@ -1,0 +1,199 @@
+<Robot Type="RightArmSimox" RootNode="InicRightArm">
+		
+	<RobotNode name="InicRightArm">
+       <Child name="RightFrontalShoulder"/>
+	</RobotNode>
+	
+<!--
+	Link 0
+-->
+	
+	<RobotNode name="RightFrontalShoulder">
+	   <Joint type="revolute">
+		   <Axis x="0" y="-1" z="0"/>
+		   <Limits lo="-45" hi="70" units="degree"/>	
+	   </Joint>  
+	   <Visualization>
+		   <File type="Inventor">models/1.0^brazo_derecho_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="RightSaggitalShoulder"/>  
+	</RobotNode>
+   
+<!--
+   Link 1
+-->
+   
+	<RobotNode name="RightSaggitalShoulder">
+	   <Joint type="revolute">
+		   <Axis x="1" y="0" z="0"/>
+		   <Limits lo="-70" hi="15" units="degree"/>	
+	   </Joint>
+	   <Transform>
+		   <DH theta="-90" d="0" a="84" alpha="0" units="degree"/>	   
+		   <DH theta="90" d="0" a="0" alpha="0" units="degree"/>
+		   <!--This two DH transformations allows you to move (the first a)
+		   in the Y axis and returning to the original coodinate system-->	
+	   </Transform>
+	   <Visualization>
+		   <File type="Inventor">models/1.1^brazo_derecho_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="RightAxialShoulder"/>	   
+	</RobotNode>
+   
+<!--
+   Link 2
+-->
+   
+	<RobotNode name="RightAxialShoulder">
+	   <Joint type="revolute">
+		   <Axis x="0" y="0" z="-1"/>
+		   <Limits lo="-55" hi="50" units="degree"/>
+	   </Joint>
+	   <Transform>
+		   <DH a="0" d="-329.01" alpha="0" theta="0" units="degree"/>
+	   </Transform>
+	   <Visualization>
+		   <File type="Inventor">models/1.2^brazo_derecho_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="RightFrontalElbow"/>
+	</RobotNode>
+  
+<!--
+	Link 3
+-->
+     
+	<RobotNode name="RightFrontalElbow">
+	   <Joint type="revolute">
+		   <Axis x="0" y="-1" z="0"/>
+		   <Limits lo="-10" hi="100" units="degree"/>  <!--Probamos a invertir los limites-->
+	   </Joint>
+	   <Visualization>
+		   <File type="Inventor">models/1.3^brazo_derecho_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="RightAxialWrist"/>   	   
+	</RobotNode>   
+
+<!--
+	Link 4
+-->
+   
+	<RobotNode name="RightAxialWrist">
+	   <Joint type="revolute">
+		   <Axis x="0" y="0" z="-1"/>
+		   <Limits lo="-90" hi="90" units="degree"/>
+	   </Joint>
+	   <Transform>
+		   <DH a="0" d="-202" alpha="0" theta="0" units="degree"/>
+	   </Transform>
+	   <Visualization>
+		   <File type="Inventor">models/1.4^brazo_derecho_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="RightFrontalWrist"/>   	   
+	</RobotNode>
+
+<!--
+	Link 5
+-->
+   
+	<RobotNode name="RightFrontalWrist">
+	   <Joint type="revolute">
+		   <Axis x="0" y="-1" z="0"/>
+		   <Limits lo="-10" hi="100" units="degree"/>
+	   </Joint>	   
+	   <Visualization>
+		   <File type="Inventor">models/1.5^brazo_derecho_links.wrl</File>
+	   </Visualization>
+	   <Child name="RightHandPalmTCP"/>
+	</RobotNode>
+   
+<!--
+	TCP    
+-->
+
+	<RobotNode name="RightHandPalmTCP">
+		<!--Masured in the lab, the TCP for the hand should be 270 mm long -->
+		<Transform>
+			<DH a="0" d="-170" alpha="0" theta="0" units="degree"/> 
+		</Transform>
+		<Child name="TCP Right Thumb Point 1"/>
+		<Child name="TCP Right Internal Down Finger Point 1"/>
+		<Child name="TCP Right External Down Finger Point 1"/>
+		<!--This TCP are the points where, once having a model of the full articulated hand, 
+		the coordinates sets will be-->
+	</RobotNode>
+	
+<!--
+	Thumb
+-->
+
+	<RobotNode name="TCP Right Thumb Point 1">
+		<Transform>
+			<DH a="34" d="0" alpha="0" theta="0" units="degree"/>
+		</Transform>
+		<Child name="TCP Right Thumb Point 2"/>	
+	</RobotNode>
+
+	<RobotNode name="TCP Right Thumb Point 2">
+		<Transform>			
+<!--
+			<DH a="0" d="-105" alpha="0" theta="0" units="degree"/>
+			
+			The maximum lenght of the finger is 105 mm but the openrave model has a 
+			slight flexion of the fingers, it is hard to make an acuarate measure.
+			Even though this part of the TCP is just for simulating the hand, but 
+			without the grasping function
+-->
+			<DH a="36" d="-80" alpha="0" theta="0" units="degree"/>
+		</Transform>
+	</RobotNode>
+
+<!--
+	Internal Down finger
+-->
+	
+	<RobotNode name="TCP Right Internal Down Finger Point 1">
+		<Transform>
+			<DH theta="-90" d="0" a="-25" alpha="0" units="degree"/>
+			<DH theta="90" d="0" a="-34" alpha="0" units="degree"/>
+		</Transform>
+		<Child name="TCP Right Internal Down Finger Point 2"/>
+	</RobotNode>
+	
+	<RobotNode name="TCP Right Internal Down Finger Point 2">
+		<Transform>
+			<DH a="-36" d="-80" alpha="0" theta="0" units="degree"/>
+		</Transform>
+	</RobotNode>
+	
+<!--
+	External Down Finger
+-->
+	
+	<RobotNode name="TCP Right External Down Finger Point 1">
+		<Transform>
+			<DH theta="-90" d="0" a="25" alpha="0" units="degree"/>
+			<DH theta="90" d="0" a="-34" alpha="0" units="degree"/>
+		</Transform>
+		<Child name="TCP Right External Down Finger Point 2"/>
+	</RobotNode>
+	
+	<RobotNode name="TCP Right External Down Finger Point 2">
+		<Transform>
+			<DH a="-36" d="-80" alpha="0" theta="0" units="degree"/>
+		</Transform>
+	</RobotNode>
+	
+<!--
+	Robot Node Right Arm
+-->
+	
+	<RobotNodeSet name="RightArmChain" kinematicRoot="RightFrontalShoulder" tcp="RightHandPalmTCP">
+		<Node name="RightFrontalShoulder"/>
+		<Node name="RightSaggitalShoulder"/>
+		<Node name="RightAxialShoulder"/>
+		<Node name="RightFrontalElbow"/>
+		<Node name="RightAxialWrist"/>
+		<Node name="RightFrontalWrist"/>
+	</RobotNodeSet>
+	
+</Robot>

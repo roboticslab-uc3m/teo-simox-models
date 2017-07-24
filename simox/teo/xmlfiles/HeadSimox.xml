@@ -1,0 +1,89 @@
+<Robot Type="HeadSimox" RootNode="InicHead">
+		
+	<RobotNode name="InicHead">
+       <Child name="AxialNeck"/>
+	</RobotNode>
+
+<!--
+	Link 0
+-->
+	<RobotNode name="AxialNeck">
+		<Joint type="revolute">
+			<Axis x="0" y="0" z="1" />
+			<Limits lo="-60" hi="60" units="degree"/>
+		</Joint>
+		<Transform>
+		   <DH a="0" d="130" alpha="0" theta="0" units="degree"/>
+		</Transform>
+	   <Visualization>
+		   <File type="Inventor">models/0.0^cabeza_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="FrontalNeck"/>	   
+	</RobotNode>
+
+<!--
+	Link 1
+-->
+
+	<RobotNode name="FrontalNeck">
+		<Joint type="revolute">
+			<Axis x="0" y="1" z="0" />
+			<Limits lo="-10" hi="10" units="degree"/>
+		</Joint>
+		<Transform>
+		   <DH a="0" d="32.5" alpha="0" theta="0" units="degree"/>
+		</Transform>
+	   <Visualization>
+		   <File type="Inventor">models/0.1^cabeza_links.wrl</File>
+	   </Visualization>
+	   <Child name="HeadTopTCP"/>
+	</RobotNode>
+
+<!--
+	TCP
+-->
+
+	<RobotNode name="HeadTopTCP">
+		<Transform>
+			<DH a="0" d="59.742" alpha="0" theta="0" units="degree"/>
+			<!--Actually the exact top of the head-->
+		</Transform>
+<!--
+		<Child name="TopSideTCP"/>
+		<Child name="LeftSideTCP"/>
+		<Child name="RightSideTCP"/>
+-->
+	</RobotNode>
+	
+<!--
+	<RobotNode name="LeftSideTCP">
+		<Transform>
+		   <DH theta="-90" d="0" a="100" alpha="0" units="degree"/>	   
+		   <DH theta="90" d="0" a="0" alpha="0" units="degree"/>
+		</Transform>
+	</RobotNode>
+	
+	<RobotNode name="RightSideTCP">
+		<Transform>
+		   <DH theta="-90" d="0" a="-100" alpha="0" units="degree"/>	   
+		   <DH theta="90" d="0" a="0" alpha="0" units="degree"/>
+		</Transform>
+	</RobotNode>
+	
+	<RobotNode name="TopSideTCP">
+		<Transform>
+		   <DH theta="0" d="37.508" a="0" alpha="0" units="degree"/>	   
+		</Transform>
+	</RobotNode>
+-->
+	
+<!--
+	Robot Node Head
+-->
+	
+	<RobotNodeSet name="HeadChain" kinematicRoot="AxialNeck" tcp="HeadTopTCP">
+		<Node name="AxialNeck"/>
+		<Node name="FrontalNeck"/>
+	</RobotNodeSet>
+	
+</Robot>

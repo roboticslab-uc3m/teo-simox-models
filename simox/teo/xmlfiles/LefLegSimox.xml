@@ -1,0 +1,136 @@
+<Robot Type="LeftLeg" RootNode="InicLeftLeg">
+
+   <RobotNode name="InicLeftLeg">
+       <Child name="LeftAxialHip"/>
+   </RobotNode>
+   
+<!--
+	Link 0
+-->  
+
+   <RobotNode name="LeftAxialHip">
+	   <Joint type="revolute">
+		   <Axis x="0" y="0" z="-1"/>
+		   <Limits lo="-90" hi="90" units="degree"/>
+	   </Joint>
+	   <Transform>
+		   <DH a="0" d="0" alpha="90" theta="0" units="degree"/>
+	   </Transform>
+	   <Visualization>
+		   <File type="Inventor">models/5.0^pierna_izq_links.wrl</File>
+	   </Visualization>
+	   <Child name="LeftSaggitalHip"/>   
+   </RobotNode>
+   
+<!--
+	Link 1
+-->   
+
+   <RobotNode name="LeftSaggitalHip">
+	   <Joint type="revolute">
+		   <Axis x="-1" y="0" z="0"/>
+		   <Limits lo="-20" hi="20" units="degree"/>
+	   </Joint>  
+	   <Transform>
+		   <DH a="0" d="-92" alpha="0" theta="0" units="degree"/>	   
+	   </Transform>
+	   <Visualization>
+		   <File type="Inventor">models/5.1^pierna_izq_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="LeftFrontalHip"/>   
+   </RobotNode>
+
+<!--
+	Link 2
+-->  
+   
+   <RobotNode name="LeftFrontalHip">
+	   <Joint type="revolute">
+		   <Axis x="0" y="1" z="0"/>
+		   <Limits lo="-30" hi="45" units="degree"/>
+	   </Joint>	     
+	   <Transform>
+		   <DH a="0" d="0" alpha="0" theta="0" units="degree"/>   
+	   </Transform>
+	   <Visualization>
+		   <File type="Inventor">models/5.2^pierna_izq_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="LeftFrontalKnee"/>	   	   
+   </RobotNode>
+
+<!--
+	Link 3
+-->
+   
+   <RobotNode name="LeftFrontalKnee">
+	   <Joint type="revolute">
+		   <Axis x="0" y="1" z="0"/>
+		   <Limits lo="-5" hi="80" units="degree"/>				   
+	   </Joint>
+	   <Transform>
+		   <DH a="0" d="-330" alpha="0" theta="0" units="degree"/>   
+	   </Transform>
+	   <Visualization>
+		   <File type="Inventor">models/5.3^pierna_izq_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="LeftFrontalAnkle"/>
+	</RobotNode>
+	   
+<!--
+	Link 4
+-->
+
+      <RobotNode name="LeftFrontalAnkle">
+	   <Joint type="revolute">
+		   <Axis x="0" y="1" z="0"/>
+		   <Limits lo="-18" hi="20" units="degree"/>		   		   
+	   </Joint>
+	   <Transform>
+		   <DH theta="-90" d="-300" a="17.5" alpha="0" units="degree"/>	   
+		   <DH theta="90" d="0" a="0" alpha="0" units="degree"/>	   
+	   </Transform>
+	   <Visualization>
+		   <File type="Inventor">models/5.4^pierna_izq_links.wrl</File>
+	   </Visualization>	   
+	   <Child name="LeftSaggitalAnkle"/>	   
+   </RobotNode>
+   
+<!--
+   Link 5
+-->
+   
+   <RobotNode name="LeftSaggitalAnkle">
+	   <Joint type="revolute">
+		   <Axis x="1" y="0" z="0"/>
+		   <Limits lo="-18" hi="20" units="degree"/>	
+	   </Joint>
+		<Visualization>
+		   <File type="Inventor">models/5.5^pierna_izq_links.wrl</File>
+	   </Visualization>		   
+	   <Child name="LeftLegTCP"/>
+	</RobotNode> 
+	     
+<!--
+	TCP
+-->
+	
+   <RobotNode name="LeftLegTCP">
+	   <Transform>
+		   <DH a="0" d="-123.005" alpha="0" theta="0" units="degree"/> 
+	   </Transform>	
+	</RobotNode>
+	
+<!--
+	Robot Node LEFT LEG	   
+-->
+	
+	<RobotNodeSet name="LeftLegChain" kinematicRoot="LeftAxialHip" tcp="LeftLegTCP">
+		<Node name="LeftAxialHip"/>
+		<Node name="LeftSaggitalHip"/>
+		<Node name="LeftFrontalHip"/>
+		<Node name="LeftFrontalKnee"/>
+		<Node name="LeftFrontalAnkle"/>
+		<Node name="LeftSaggitalAnkle"/>
+	</RobotNodeSet>
+			      
+</Robot>
