@@ -22,6 +22,6 @@ LeftLegChain: Left leg joint.
 
 
 
-Created by Alvaro Martinez for his bachelor thesis (100317213[at]alumnos.uc3m.es), 2017
+Created by Alvaro Martinez for his bachelor thesis (100317213[at]alumnos.uc3m.es, amrobledo[at]ing.uc3m.es), 2017
 
 
