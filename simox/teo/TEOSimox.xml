@@ -13,6 +13,12 @@
 	   <Visualization>
 		   <File type="Inventor">xmlfiles/models/cintura_links.wrl</File>
 	   </Visualization>
+	   <CollisionModel>	   
+		   <!--In theory, the type for stl files is "osg", 
+		   but it only works wityh "Inventor"-->
+		   <File type="Inventor">xmlfiles/collisionModels/link-0.stl</File>
+		</CollisionModel>
+
 	</RobotNode>
 	
 <!--

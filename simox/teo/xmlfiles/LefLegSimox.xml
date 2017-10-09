@@ -19,6 +19,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/5.0^pierna_izq_links.wrl</File>
 	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-23.stl</File>
+	   </CollisionModel>
 	   <Child name="LeftSaggitalHip"/>   
    </RobotNode>
    
@@ -36,7 +39,10 @@
 	   </Transform>
 	   <Visualization>
 		   <File type="Inventor">models/5.1^pierna_izq_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-24.stl</File>
+	   </CollisionModel>	   
 	   <Child name="LeftFrontalHip"/>   
    </RobotNode>
 
@@ -54,7 +60,10 @@
 	   </Transform>
 	   <Visualization>
 		   <File type="Inventor">models/5.2^pierna_izq_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-25.stl</File>
+	   </CollisionModel>	   
 	   <Child name="LeftFrontalKnee"/>	   	   
    </RobotNode>
 
@@ -72,7 +81,10 @@
 	   </Transform>
 	   <Visualization>
 		   <File type="Inventor">models/5.3^pierna_izq_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-26.stl</File>
+	   </CollisionModel>	   
 	   <Child name="LeftFrontalAnkle"/>
 	</RobotNode>
 	   
@@ -91,7 +103,10 @@
 	   </Transform>
 	   <Visualization>
 		   <File type="Inventor">models/5.4^pierna_izq_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-27.stl</File>
+	   </CollisionModel>	   
 	   <Child name="LeftSaggitalAnkle"/>	   
    </RobotNode>
    
@@ -106,7 +121,10 @@
 	   </Joint>
 		<Visualization>
 		   <File type="Inventor">models/5.5^pierna_izq_links.wrl</File>
-	   </Visualization>		   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-28.stl</File>
+	   </CollisionModel>		   
 	   <Child name="LeftLegTCP"/>
 	</RobotNode> 
 	     

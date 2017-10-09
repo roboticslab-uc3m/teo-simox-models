@@ -15,7 +15,10 @@
 	   </Joint>  
 	   <Visualization>
 		   <File type="Inventor">models/3.0^torso_simple_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-1.stl</File>
+	   </CollisionModel>	   
 	   <Child name="FrontalWaist"/>  
 	</RobotNode>
    
@@ -31,6 +34,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/3.1^torso_simple_links.wrl</File>
 	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-2.stl</File>
+	   </CollisionModel>
 <!-- Transformations to the head and the arms -->  
 	   <Child name="TrafoToRightArm"/>
 	   <Child name="TrafoToLeftArm"/>

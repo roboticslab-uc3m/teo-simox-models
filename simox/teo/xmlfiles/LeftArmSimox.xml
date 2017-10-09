@@ -15,7 +15,10 @@
 	   </Joint>  
 	   <Visualization>
 		   <File type="Inventor">models/2.0^brazo_izquierdo_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-11.stl</File>
+	   </CollisionModel>	   
 	   <Child name="LeftSaggitalShoulder"/>   
 	</RobotNode>
    
@@ -36,7 +39,10 @@
 	   </Transform>
 	   <Visualization>
 		   <File type="Inventor">models/2.1^brazo_izquierdo_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-12.stl</File>
+	   </CollisionModel>		   
 	   <Child name="LeftAxialShoulder"/>   
 	</RobotNode>
    
@@ -54,7 +60,10 @@
 	   </Transform>
 	   <Visualization>
 		   <File type="Inventor">models/2.2^brazo_izquierdo_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-13.stl</File>
+	   </CollisionModel>		   
 	   <Child name="LeftFrontalElbow"/>   	   
 	</RobotNode>
    
@@ -69,7 +78,10 @@
 	   </Joint>
 	   <Visualization>
 		   <File type="Inventor">models/2.3^brazo_izquierdo_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-14.stl</File>
+	   </CollisionModel>		   
 	   <Child name="LeftAxialWrist"/>   	   
 	</RobotNode>
    
@@ -87,7 +99,10 @@
 	   </Transform>
 	   <Visualization>
 		   <File type="Inventor">models/2.4^brazo_izquierdo_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-15.stl</File>
+	   </CollisionModel>		   
 	   <Child name="LeftFrontalWrist"/>
 	</RobotNode>
    
@@ -103,6 +118,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/2.5^brazo_izquierdo_links.wrl</File>
 	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-16.stl</File>
+	   </CollisionModel>	
 	   <Child name="LeftHandPalmTCP"/>	   
 	</RobotNode>
 	

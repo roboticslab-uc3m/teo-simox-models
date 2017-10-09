@@ -17,7 +17,10 @@
 		</Transform>
 	   <Visualization>
 		   <File type="Inventor">models/0.0^cabeza_links.wrl</File>
-	   </Visualization>	   
+	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-3.stl</File>
+	   </CollisionModel>	   
 	   <Child name="FrontalNeck"/>	   
 	</RobotNode>
 
@@ -36,6 +39,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/0.1^cabeza_links.wrl</File>
 	   </Visualization>
+	   <CollisionModel>
+		   <File type="Inventor">collisionModels/link-4.stl</File>
+	   </CollisionModel>
 	   <Child name="HeadTopTCP"/>
 	</RobotNode>
 
