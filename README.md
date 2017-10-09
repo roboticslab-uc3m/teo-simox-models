@@ -20,7 +20,12 @@ LeftArmChain:Left arm joints.
 RightLegChain: Right leg joint.
 LeftLegChain: Left leg joint.
 
+###Collision models
 
+Added to the robot model.
+Work in progress: too many triangles.
+
+##Creator
 
 Created by Alvaro Martinez for his bachelor thesis (100317213[at]alumnos.uc3m.es, amrobled[at]ing.uc3m.es), 2017
 
