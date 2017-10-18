@@ -1,16 +1,14 @@
 # teo-simox-models
 
-TEO Simox Models.
-
-###Sumary
+## Sumary
 
 This repository cointains the necesary files for working with TEO in the ArmarX enviroment. 
 
-###Instructions
+## Instructions
 
 TEO files are located in /simox/teo, the main file is "TEOSimox.xml"
 
-###Kinematic Chains (RobotNodes)
+## Kinematic Chains (RobotNodes)
 
 TEO: All robot joints.
 TrunkChain: Upper body joints.
@@ -20,13 +18,11 @@ LeftArmChain:Left arm joints.
 RightLegChain: Right leg joint.
 LeftLegChain: Left leg joint.
 
-###Collision models
+## Collision models
 
 Added to the robot model.
 Work in progress: too many triangles.
 
-##Creator
+## Creator
 
 Created by Alvaro Martinez for his bachelor thesis (100317213[at]alumnos.uc3m.es, amrobled[at]ing.uc3m.es), 2017
-
-
