@@ -8,20 +8,29 @@ This repository cointains the necesary files for working with TEO in the ArmarX 
 
 TEO files are located in /simox/teo, the main file is "TEOSimox.xml"
 
-## Kinematic Chains (RobotNodes)
+## Kinematic Chains (RobotNodeSets)
 
-TEO: All robot joints.
-TrunkChain: Upper body joints.
-HeadChain: Head joints.
-RightArmChain: Right arm joints.
-LeftArmChain:Left arm joints.
-RightLegChain: Right leg joint.
-LeftLegChain: Left leg joint.
+**TEO**: All robot joints.
+
+**TrunkChain**: Upper body joints.
+
+**HeadChain**: Head joints.
+
+**RightArmChain**: Right arm joints.
+
+**LeftArmChain**: Left arm joints.
+
+**RightLegChain**: Right leg joint.
+
+**LeftLegChain**: Left leg joint.
 
 ## Collision models
 
-Added to the robot model.
-Work in progress: too many triangles.
+They have been added and can be found in /simox/teo/xmlfiles/collisionModels. It is a expaded 3D model over the normal of each plane. The hands need to be more precise model.
+
+## Dynamics
+
+The masses and the COM are being calculated.
 
 ## Creator
 
