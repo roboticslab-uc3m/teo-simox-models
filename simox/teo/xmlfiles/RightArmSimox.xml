@@ -16,11 +16,13 @@
 	   <Visualization>
 		   <File type="Inventor">models/1.0^brazo_derecho_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="2,267" y="-56,164" z="8,456" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-5.stl</File>
 	   </CollisionModel>
-
-	   <Child name="RightSaggitalShoulder"/>  
+	   <Child name="RightSaggitalShoulder"/> 
 	</RobotNode>
    
 <!--
@@ -38,6 +40,10 @@
 		   <!--This two DH transformations allows you to move (the first a)
 		   in the Y axis and returning to the original coodinate system-->	
 	   </Transform>
+	   <Physics>
+            <CoM location="Joint" x="-8,472" y="-4,826" z="-27,321" units="mm"/>
+            <Mass value="302.5" units="g" />
+        </Physics>
 	   <Visualization>
 		   <File type="Inventor">models/1.1^brazo_derecho_links.wrl</File>
 	   </Visualization>
@@ -62,6 +68,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/1.2^brazo_derecho_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="0" y="0" z="107,382" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-7.stl</File>
 	   </CollisionModel>	   
@@ -80,6 +89,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/1.3^brazo_derecho_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="0" y="0" z="-49,980" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-8.stl</File>
 	   </CollisionModel>	   
@@ -98,6 +110,9 @@
 	   <Transform>
 		   <DH a="0" d="-202" alpha="0" theta="0" units="degree"/>
 	   </Transform>
+	   <Physics>
+            <CoM location="Joint" x="-1,151" y="0,603" z="24,640" units="mm"/>
+       </Physics>
 	   <Visualization>
 		   <File type="Inventor">models/1.4^brazo_derecho_links.wrl</File>
 	   </Visualization>
@@ -119,6 +134,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/1.5^brazo_derecho_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="-2,314" y="0" z="-108,635" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-10.stl</File>
 	   </CollisionModel>

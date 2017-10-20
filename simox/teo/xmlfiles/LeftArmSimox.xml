@@ -16,6 +16,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/2.0^brazo_izquierdo_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="-2,272" y="56,186" z="8,165" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-11.stl</File>
 	   </CollisionModel>	   
@@ -40,6 +43,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/2.1^brazo_izquierdo_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="-8,047" y="4,937" z="-27,619" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-12.stl</File>
 	   </CollisionModel>		   
@@ -61,6 +67,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/2.2^brazo_izquierdo_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="-0,172" y="0,249" z="100,649" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-13.stl</File>
 	   </CollisionModel>		   
@@ -79,6 +88,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/2.3^brazo_izquierdo_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="0,287" y="-0,116" z="-53,185" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-14.stl</File>
 	   </CollisionModel>		   
@@ -100,6 +112,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/2.4^brazo_izquierdo_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="-1,151" y="0,603" z="24,640" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-15.stl</File>
 	   </CollisionModel>		   
@@ -118,6 +133,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/2.5^brazo_izquierdo_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="-2,314" y="0,070" z="-108,635" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-16.stl</File>
 	   </CollisionModel>	

@@ -18,7 +18,10 @@
 	   </Visualization>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-1.stl</File>
-	   </CollisionModel>	   
+	   </CollisionModel>
+	   <Physics>
+            <CoM location="Joint" x="-2,235" y="-0,979" z="-18,814" units="mm"/>
+       </Physics>	   
 	   <Child name="FrontalWaist"/>  
 	</RobotNode>
    
@@ -34,6 +37,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/3.1^torso_simple_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="32,985" y="-7,876" z="220,667" units="mm"/>
+       </Physics>	
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-2.stl</File>
 	   </CollisionModel>

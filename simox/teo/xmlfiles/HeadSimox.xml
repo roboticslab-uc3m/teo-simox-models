@@ -15,9 +15,12 @@
 		<Transform>
 		   <DH a="0" d="130" alpha="0" theta="0" units="degree"/>
 		</Transform>
-	   <Visualization>
+		<Physics>
+            <CoM location="Joint" x="0,302" y="0,193" z="-45,200" units="mm"/>
+        </Physics>
+        <Visualization>
 		   <File type="Inventor">models/0.0^cabeza_links.wrl</File>
-	   </Visualization>
+		</Visualization>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-3.stl</File>
 	   </CollisionModel>	   
@@ -36,6 +39,9 @@
 		<Transform>
 		   <DH a="0" d="32.5" alpha="0" theta="0" units="degree"/>
 		</Transform>
+		<Physics>
+            <CoM location="Joint" x="-2,729" y="-0,086" z="67,027" units="mm"/>
+        </Physics>
 	   <Visualization>
 		   <File type="Inventor">models/0.1^cabeza_links.wrl</File>
 	   </Visualization>

@@ -19,6 +19,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/5.0^pierna_izq_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="0,089" y="-0,389" z="-65,985" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-23.stl</File>
 	   </CollisionModel>
@@ -40,6 +43,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/5.1^pierna_izq_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="-0,110" y="-0,988" z="0,214" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-24.stl</File>
 	   </CollisionModel>	   
@@ -61,6 +67,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/5.2^pierna_izq_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="-10,862" y="-0,006" z="-161,205" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-25.stl</File>
 	   </CollisionModel>	   
@@ -82,6 +91,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/5.3^pierna_izq_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="-6,614" y="-0,411" z="-146,413" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-26.stl</File>
 	   </CollisionModel>	   
@@ -104,6 +116,9 @@
 	   <Visualization>
 		   <File type="Inventor">models/5.4^pierna_izq_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="1,999" y="13,793" z="0,035" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-27.stl</File>
 	   </CollisionModel>	   
@@ -122,6 +137,9 @@
 		<Visualization>
 		   <File type="Inventor">models/5.5^pierna_izq_links.wrl</File>
 	   </Visualization>
+	   <Physics>
+            <CoM location="Joint" x="10,136" Y="-0,799" z="-56,090" units="mm"/>
+       </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-28.stl</File>
 	   </CollisionModel>		   
