@@ -1,0 +1,222 @@
+<Robot Type="RightHandSimox" RootNode="InicRightHand">
+		
+	<RobotNode name="InicRightHand">
+       <Child name="RightFrontalWrist"/>
+	</RobotNode>	
+	
+	
+	
+	<RobotNode name="RightFrontalWrist">
+		<Joint type="revolute">
+			<Axis x="0" y="-1" z="0"/>
+			<Limits lo="-10" hi="100" units="degree"/>
+		</Joint>	   
+		<Visualization>
+			<File type="Inventor">models/hands/full_wrist.stl</File>
+			<UseAsCollisionModel/>
+		</Visualization>
+		<Physics>
+            <CoM location="Joint" x="-2,314" y="0" z="-108,635" units="mm"/>
+		</Physics>
+		<!--<CollisionModel>
+			<File type="Inventor">collisionModels/link-10.stl</File>
+		</CollisionModel>-->
+		<Child name="RightThumbProximal"/>
+		<Child name="RightExternalFingerProximal"/>
+		<Child name="RightInternalFingerProximal"/>
+		<Child name="RightArmTCP"/>
+		<Child name="RightHandGCP"/>
+	</RobotNode>
+	
+<!--
+	Arm TCP
+-->
+   
+   <RobotNode name="RightArmTCP">
+		<Transform>
+			<Translation x="0" y="0" z="-172,499113" unitsLength="mm"/>
+		</Transform>	
+	</RobotNode>
+	
+<!--
+	Hand GCP
+-->
+
+	<RobotNode name="RightHandGCP">
+		<Transform>
+			<Translation x="0" y="0" z="-200" unitsLength="mm"/>
+		</Transform>	
+	</RobotNode>
+	
+<!--
+	Thumb
+-->
+
+	<RobotNode name="RightThumbProximal">
+		<Joint type="revolute">
+			<Axis x="0" y="1" z="0"/>
+			<Limits lo="-20" hi="25" units="degree"/>
+		</Joint>
+		<Transform>
+			<Translation x="27,472302" y="0" z="-164,588951" unitsLength="mm"/>
+		</Transform>
+		<Visualization>
+			<File type="Inventor">models/hands/thumb_proximal_phalanx.stl</File>
+			<UseAsCollisionModel/>
+		</Visualization>
+		<Child name="RightThumbDistal"/>	
+	</RobotNode>
+
+	<RobotNode name="RightThumbDistal">
+		<Joint type="revolute">
+			<Axis x="0" y="1" z="0"/>
+			<Limits lo="0" hi="75" units="degree"/>
+		</Joint>
+		<Transform>			
+			<Translation x="27" y="0" z="-47" unitsLength="mm"/>
+		</Transform>		
+		<Visualization>
+			<File type="Inventor">models/hands/thumb_distal_phalanx.stl</File>
+			<UseAsCollisionModel/>
+		</Visualization>
+		<Child name="RightThumbTCP"/>
+	</RobotNode>
+	
+	<RobotNode name="RightThumbTCP">
+		<Transform>			
+			<Translation x="7,501516" y="0" z="-43,355822" unitsLength="mm"/>
+		</Transform>		
+	</RobotNode>
+
+<!--
+	External Finger
+-->
+	
+	<RobotNode name="RightExternalFingerProximal">
+		<Joint type="revolute">
+			<Axis x="0" y="-1" z="0"/>
+			<Limits lo="-25" hi="20" units="degree"/>
+		</Joint>
+		<Transform>
+			<Translation x="-28,52741" y="-20,10339" z="-164,409358" unitsLength="mm"/>
+		</Transform>
+		<Visualization>
+			<File type="Inventor">models/hands/index_proximal_phalanx.stl</File>
+			<UseAsCollisionModel/>
+		</Visualization>
+		<Child name="RightExternalFingerDistal"/>
+	</RobotNode>
+	
+	<RobotNode name="RightExternalFingerDistal">
+		<Joint type="revolute">
+			<Axis x="0" y="-1" z="0"/>
+			<Limits lo="0" hi="75" units="degree"/>
+		</Joint>
+		<Transform>			
+			<Translation x="-27" y="0" z="-47" unitsLength="mm"/>
+		</Transform>		
+		<Visualization>
+			<File type="Inventor">models/hands/index_distal_phalanx.stl</File>
+			<UseAsCollisionModel/>
+		</Visualization>
+		<Child name="RightExternalTCP"/>
+	</RobotNode>
+	
+	<RobotNode name="RightExternalTCP">
+		<Transform>			
+			<Translation x="-7,501516" y="0" z="-43,355822" unitsLength="mm"/>
+		</Transform>		
+	</RobotNode>
+	
+<!--
+	Internal Finger
+-->
+	
+	<RobotNode name="RightInternalFingerProximal">
+		<Joint type="revolute">
+			<Axis x="0" y="-1" z="0"/>
+			<Limits lo="-25" hi="20" units="degree"/>
+		</Joint>
+		<Transform>
+			<Translation x="-28,52741" y="20,10339" z="-164,409358" unitsLength="mm"/>
+		</Transform>
+		<Visualization>
+			<File type="Inventor">models/hands/index_proximal_phalanx.stl</File>
+			<UseAsCollisionModel/>
+		</Visualization>
+		<Child name="RightInternalFingerDistal"/>
+	</RobotNode>
+	
+	<RobotNode name="RightInternalFingerDistal">
+		<Joint type="revolute">
+			<Axis x="0" y="-1" z="0"/>
+			<Limits lo="0" hi="75" units="degree"/>
+		</Joint>
+		<Transform>			
+			<Translation x="-27" y="0" z="-47" unitsLength="mm"/>
+		</Transform>		
+		<Visualization>
+			<File type="Inventor">models/hands/index_distal_phalanx.stl</File>
+			<UseAsCollisionModel/>
+		</Visualization>
+		<Child name="RightInternalTCP"/>
+	</RobotNode>
+	
+	<RobotNode name="RightInternalTCP">
+		<Transform>			
+			<Translation x="-7,501516" y="0" z="-43,355822" unitsLength="mm"/>
+		</Transform>		
+	</RobotNode>
+
+<!--
+	kinematic Chain 
+-->
+	
+	<RobotNodeSet name="RightHandChain" kinematicRoot="InicRightHand" tcp="RightArmTCP">
+		<Node name="RightThumbProximal"/>
+		<Node name="RightThumbDistal"/>
+		<Node name="RightExternalFingerProximal"/>
+		<Node name="RightExternalFingerDistal"/>
+		<Node name="RightInternalFingerProximal"/>
+		<Node name="RightInternalFingerDistal"/>
+	</RobotNodeSet>
+	
+<!--
+	EndEffector 
+-->		
+
+	<Endeffector name="RightHandEEF" base="InicRightHand" tcp="RightArmTCP" gcp="RightHandGCP">
+	    <Preshape name="Open Preshape">
+	        <Node name="RightThumbProximal" 			unit="degrees" value="-20"/>
+			<Node name="RightThumbDistal" 				unit="degrees" value="0"/>
+			<Node name="RightExternalFingerProximal"	unit="degrees" value="-20"/>
+			<Node name="RightExternalFingerDistal"		unit="degrees" value="0"/>
+			<Node name="RightInternalFingerProximal"	unit="degrees" value="-20"/>
+			<Node name="RightInternalFingerDistal"		unit="degrees" value="0"/>
+	    </Preshape>
+        <Preshape name="Open Preshape">
+	        <Node name="RightThumbProximal" 			unit="degrees" value="25"/>
+			<Node name="RightThumbDistal" 				unit="degrees" value="75"/>
+			<Node name="RightExternalFingerProximal"	unit="degrees" value="25"/>
+			<Node name="RightExternalFingerDistal"		unit="degrees" value="75"/>
+			<Node name="RightInternalFingerProximal"	unit="degrees" value="25"/>
+			<Node name="RightInternalFingerDistal"		unit="degrees" value="75"/>
+	    </Preshape>
+		<Static>
+			<Node name="RightFrontalWrist"/>
+		</Static>
+		<Actor name="RightThumb">
+			<Node name="RightThumbProximal"	considerCollisions="Actors"/>
+			<Node name="RightThumbDistal"	considerCollisions="All"/>
+		</Actor>
+		<Actor name="RightExternalFinger">
+			<Node name="RightExternalFingerProximal"	considerCollisions="Actors"/>
+			<Node name="RightExternalFingerDistal"	considerCollisions="All"/>
+		</Actor>
+		<Actor name="RightInternalFinger">
+			<Node name="RightInternalFingerProximal"	considerCollisions="Actors"/>
+			<Node name="RightInternalFingerDistal"	considerCollisions="All"/>
+		</Actor>
+	</Endeffector>
+	
+</Robot>

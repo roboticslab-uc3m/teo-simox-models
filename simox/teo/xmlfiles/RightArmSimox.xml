@@ -118,113 +118,17 @@
 	   </Visualization>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-9.stl</File>
-	   </CollisionModel>	   
-	   <Child name="RightFrontalWrist"/>   	   
-	</RobotNode>
-
-<!--
-	Link 5
--->
-   
-	<RobotNode name="RightFrontalWrist">
-	   <Joint type="revolute">
-		   <Axis x="0" y="-1" z="0"/>
-		   <Limits lo="-10" hi="100" units="degree"/>
-	   </Joint>	   
-	   <Visualization>
-		   <File type="Inventor">models/1.5^brazo_derecho_links.wrl</File>
-	   </Visualization>
-	   <Physics>
-            <CoM location="Joint" x="-2,314" y="0" z="-108,635" units="mm"/>
-       </Physics>
-	   <CollisionModel>
-		   <File type="Inventor">collisionModels/link-10.stl</File>
 	   </CollisionModel>
-	   <Child name="RightHandPalmTCP"/>
+	   <ChildFromRobot>
+            <File importEEF="true">RightHandSimox.xml</File>
+		</ChildFromRobot>	   
 	</RobotNode>
-   
-<!--
-	TCP    
--->
-
-	<RobotNode name="RightHandPalmTCP">
-		<!--Masured in the lab, the TCP for the hand should be 270 mm long -->
-		<Transform>
-			<DH a="0" d="-170" alpha="0" theta="0" units="degree"/> 
-		</Transform>
-		<Child name="TCP Right Thumb Point 1"/>
-		<Child name="TCP Right Internal Down Finger Point 1"/>
-		<Child name="TCP Right External Down Finger Point 1"/>
-		<!--This TCP are the points where, once having a model of the full articulated hand, 
-		the coordinates sets will be-->
-	</RobotNode>
-	
-<!--
-	Thumb
--->
-
-	<RobotNode name="TCP Right Thumb Point 1">
-		<Transform>
-			<DH a="34" d="0" alpha="0" theta="0" units="degree"/>
-		</Transform>
-		<Child name="TCP Right Thumb Point 2"/>	
-	</RobotNode>
-
-	<RobotNode name="TCP Right Thumb Point 2">
-		<Transform>			
-<!--
-			<DH a="0" d="-105" alpha="0" theta="0" units="degree"/>
-			
-			The maximum lenght of the finger is 105 mm but the openrave model has a 
-			slight flexion of the fingers, it is hard to make an acuarate measure.
-			Even though this part of the TCP is just for simulating the hand, but 
-			without the grasping function
--->
-			<DH a="36" d="-80" alpha="0" theta="0" units="degree"/>
-		</Transform>
-	</RobotNode>
-
-<!--
-	Internal Down finger
--->
-	
-	<RobotNode name="TCP Right Internal Down Finger Point 1">
-		<Transform>
-			<DH theta="-90" d="0" a="-25" alpha="0" units="degree"/>
-			<DH theta="90" d="0" a="-34" alpha="0" units="degree"/>
-		</Transform>
-		<Child name="TCP Right Internal Down Finger Point 2"/>
-	</RobotNode>
-	
-	<RobotNode name="TCP Right Internal Down Finger Point 2">
-		<Transform>
-			<DH a="-36" d="-80" alpha="0" theta="0" units="degree"/>
-		</Transform>
-	</RobotNode>
-	
-<!--
-	External Down Finger
--->
-	
-	<RobotNode name="TCP Right External Down Finger Point 1">
-		<Transform>
-			<DH theta="-90" d="0" a="25" alpha="0" units="degree"/>
-			<DH theta="90" d="0" a="-34" alpha="0" units="degree"/>
-		</Transform>
-		<Child name="TCP Right External Down Finger Point 2"/>
-	</RobotNode>
-	
-	<RobotNode name="TCP Right External Down Finger Point 2">
-		<Transform>
-			<DH a="-36" d="-80" alpha="0" theta="0" units="degree"/>
-		</Transform>
-	</RobotNode>
-	
+		
 <!--
 	Robot Node Right Arm
 -->
 	
-	<RobotNodeSet name="RightArmChain" kinematicRoot="RightFrontalShoulder" tcp="RightHandPalmTCP">
+	<RobotNodeSet name="RightArmChain" kinematicRoot="RightFrontalShoulder" tcp="RightArmTCP">
 		<Node name="RightFrontalShoulder"/>
 		<Node name="RightSaggitalShoulder"/>
 		<Node name="RightAxialShoulder"/>
@@ -232,5 +136,6 @@
 		<Node name="RightAxialWrist"/>
 		<Node name="RightFrontalWrist"/>
 	</RobotNodeSet>
+
 	
 </Robot>
