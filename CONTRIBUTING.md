@@ -1,4 +1,4 @@
-
+Have a feature request or found a bug?
 
 Before opening a fresh issue, do a search on [the wiki](http://robots.uc3m.es/index.php/TEO) and on [GitHub](https://github.com/roboticslab-uc3m/teo-simox-models/issues) and make sure it hasn't already been addressed. Here are some notes on how to detail feature requests or bug reports:
 * Explain, as detailed as possible, how to reproduce the issue or the specific behaviour for the feature.
