@@ -38,7 +38,7 @@ For grasping capabilities one EndEffector for each hand was added: **RightHandEE
 
 ## Dynamics
 
-The masses and the COM are being calculated.
+The masses are being calculated. The COM have been added.
 
 ### Creator
 
