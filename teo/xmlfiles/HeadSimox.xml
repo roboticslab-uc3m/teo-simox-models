@@ -17,6 +17,7 @@
 		</Transform>
 		<Physics>
             <CoM location="Joint" x="0,302" y="0,193" z="-45,200" units="mm"/>
+            <Mass value="1000" units="g"/>
         </Physics>
         <Visualization>
 		   <File type="Inventor">models/0.0^cabeza_links.wrl</File>
@@ -41,6 +42,7 @@
 		</Transform>
 		<Physics>
             <CoM location="Joint" x="-2,729" y="-0,086" z="67,027" units="mm"/>
+            <Mass value="2000" units="g"/>
         </Physics>
 	   <Visualization>
 		   <File type="Inventor">models/0.1^cabeza_links.wrl</File>

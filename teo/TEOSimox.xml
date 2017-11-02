@@ -10,13 +10,17 @@
 	Root
 -->
 	<RobotNode name="RootWaist">
-	   <Visualization>
-		   <File type="Inventor">xmlfiles/models/cintura_links.wrl</File>
-	   </Visualization>
-	   <CollisionModel>	   
+		<Visualization>
+			<File type="Inventor">xmlfiles/models/cintura_links.wrl</File>
+		</Visualization>
+		<Physics>
+            <CoM location="Joint" x="-10,985" y="-0,323" z="33,148" units="mm"/>
+            <Mass value="2500" units="g" />
+		</Physics>
+		<CollisionModel>	   
 		   <!--In theory, the type for stl files is "osg", 
 		   but it only works wityh "Inventor"-->
-		   <File type="Inventor">xmlfiles/collisionModels/link-0.stl</File>
+			<File type="Inventor">xmlfiles/collisionModels/link-0.stl</File>
 		</CollisionModel>
 
 	</RobotNode>
