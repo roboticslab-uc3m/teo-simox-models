@@ -6,7 +6,7 @@ This repository cointains the necesary files for working with TEO in the ArmarX 
 
 ## Instructions
 
-TEO files are located in /simox/teo, the main file is "TEOSimox.xml". Files rearrangement is WIP.
+TEO files are located in /teo, the main file is "TEOSimox.xml".
 
 ## Kinematic Chains (RobotNodeSets)
 
@@ -30,7 +30,7 @@ TEO files are located in /simox/teo, the main file is "TEOSimox.xml". Files rear
 
 ## Collision models
 
-They have been added and can be found in /simox/teo/xmlfiles/collisionModels. It is a expaded 3D model over the normal of each plane. The hands need to be more precise model.
+They have been added and can be found in /teo/xmlfiles/collisionModels. It is a expaded 3D model over the normal of each plane.
 
 ## EndEffectors
 
@@ -38,7 +38,7 @@ For grasping capabilities one EndEffector for each hand was added: **RightHandEE
 
 ## Dynamics
 
-The masses are being calculated. The COM have been added.
+The robot model now has the masses and CoM of each part.
 
 ### Creator
 
