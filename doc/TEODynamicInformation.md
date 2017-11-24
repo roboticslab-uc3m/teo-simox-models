@@ -930,7 +930,7 @@ Lyx = 0.01 Lyy = 2416060.36 Lyz = -0.01
 Lzx = 12088.37 Lzy = -0.01 Lzz = 1590044.65
 
 
-### LeftFrontalAnkle
+### LeftSaggitalAnkle
 
 Masa = 2633.40 g
 
@@ -1017,7 +1017,7 @@ Lzx = 0.00 Lzy = 0.00 Lzz = 2645088.53
 Masa = 1454.59 g
 
 Volumen = 357656.76 mm³
-
+@AlvaroMartinezR
 Centro de masa: ( mm )
 
 X = 1.18
