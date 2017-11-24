@@ -18,7 +18,7 @@
 	   </Visualization>
 	   <Physics>
             <CoM location="Joint" x="2,267" y="-56,164" z="8,456" units="mm"/>
-            <Mass value="1600" units="g"/>
+            <Mass value="2000" units="g"/>
        </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-5.stl</File>
@@ -43,7 +43,7 @@
 	   </Transform>
 	   <Physics>
             <CoM location="Joint" x="-8,472" y="-4,826" z="-27,321" units="mm"/>
-            <Mass value="1600" units="g" />
+            <Mass value="1000" units="g" />
 		</Physics>
 		<Visualization>
 			<File type="Inventor">models/1.1^brazo_derecho_links.wrl</File>
@@ -71,7 +71,7 @@
 	   </Visualization>
 	   <Physics>
             <CoM location="Joint" x="0" y="0" z="107,382" units="mm"/>
-            <Mass value="1100" units="g"/>
+            <Mass value="1000" units="g"/>
        </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-7.stl</File>
@@ -93,7 +93,7 @@
 	   </Visualization>
 	   <Physics>
             <CoM location="Joint" x="0" y="0" z="-49,980" units="mm"/>
-            <Mass value="1100" units="g"/>
+            <Mass value="1000" units="g"/>
        </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-8.stl</File>

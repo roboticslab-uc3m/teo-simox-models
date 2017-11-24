@@ -40,7 +40,7 @@
 	   </Visualization>
 	   <Physics>
             <CoM location="Joint" x="32,985" y="-7,876" z="220,667" units="mm"/>
-            <Mass value="12635,45" units="g"/>
+            <Mass value="14235,45" units="g"/>
        </Physics>	
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-2.stl</File>

@@ -14,7 +14,7 @@
 			<File type="Inventor">xmlfiles/models/cintura_links.wrl</File>
 		</Visualization>
 		<Physics>
-            <CoM location="Joint" x="-10,985" y="-0,323" z="33,148" units="mm"/>
+            <CoM location="Joint" x="-16,02" y="9,95" z="33,148" units="mm"/>
             <Mass value="2500" units="g" />
 		</Physics>
 		<CollisionModel>	   
