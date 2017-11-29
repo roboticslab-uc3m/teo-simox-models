@@ -18,6 +18,11 @@
 		<Physics>
 			<CoM location="Joint" x="-2,314" y="0" z="-108,635" units="mm"/>
 			<Mass value="1170" units="g"/>
+			<InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='5330646.84' c2='127.73' c3='100487.37'/>
+				<row2 c1='127.73' c2='5345281.96' c3='-8069.63'/>
+				<row3 c1='100487.37' c2='-8069.63' c3='882488.65'/>
+            </InertiaMatrix>
 		</Physics>
 		<!--<CollisionModel>
 			<File type="Inventor">collisionModels/link-10.stl</File>

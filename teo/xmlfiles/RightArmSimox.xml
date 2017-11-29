@@ -19,6 +19,11 @@
 	   <Physics>
             <CoM location="Joint" x="2,267" y="-56,164" z="8,456" units="mm"/>
             <Mass value="2000" units="g"/>
+            <InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='4226791.05' c2='84382.30' c3='-11698.91'/>
+				<row2 c1='84382.30' c2='2127281.33' c3='-280493.15'/>
+				<row3 c1='-11698.91' c2='-280493.15' c3='4093161.32'/>
+            </InertiaMatrix>
        </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-5.stl</File>
@@ -43,7 +48,12 @@
 	   </Transform>
 	   <Physics>
             <CoM location="Joint" x="-8,472" y="-4,826" z="-27,321" units="mm"/>
-            <Mass value="1000" units="g" />
+            <Mass value="1000" units="g"/>
+            <InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='1610931.66' c2='-69037.90' c3='-214886.06'/>
+				<row2 c1='-69037.90' c2='2187775.81' c3='163005.40'/>
+				<row3 c1='-214886.06' c2='163005.40' c3='1173533.26'/>
+            </InertiaMatrix>
 		</Physics>
 		<Visualization>
 			<File type="Inventor">models/1.1^brazo_derecho_links.wrl</File>
@@ -72,6 +82,11 @@
 	   <Physics>
             <CoM location="Joint" x="0" y="0" z="107,382" units="mm"/>
             <Mass value="1000" units="g"/>
+            <InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='6925108.26' c2='0.00' c3='0.00'/>
+				<row2 c1='0.00' c2='6741634.14' c3='-39690.86'/>
+				<row3 c1='0.00' c2='-39690.86' c3='611795.51'/>
+            </InertiaMatrix>
        </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-7.stl</File>
@@ -94,6 +109,11 @@
 	   <Physics>
             <CoM location="Joint" x="0" y="0" z="-49,980" units="mm"/>
             <Mass value="1000" units="g"/>
+            <InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='2590028.58' c2='0.00' c3='0.00'/>
+				<row2 c1='0.00' c2='2623069.51' c3='0.00'/>
+				<row3 c1='0.00' c2='0.00' c3='446024.47'/>
+            </InertiaMatrix>
        </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-8.stl</File>
@@ -119,6 +139,11 @@
 	   <Physics>
             <CoM location="Joint" x="-1,151" y="0,603" z="24,640" units="mm"/>
             <Mass value="631.4892166152" units="g"/>
+            <InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='701463.31' c2='-10454.91' c3='-10855.70'/>
+				<row2 c1='-10454.91' c2='612806.24	' c3='11471.10'/>
+				<row3 c1='-10855.70' c2='11471.10' c3='326948.83'/>
+            </InertiaMatrix>
        </Physics>
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-9.stl</File>

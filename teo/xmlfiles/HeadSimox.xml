@@ -18,6 +18,11 @@
 		<Physics>
             <CoM location="Joint" x="0,302" y="0,193" z="-45,200" units="mm"/>
             <Mass value="1000" units="g"/>
+            <InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='939062.50' c2='0.00' c3='0.00'/>
+				<row2 c1='0.00' c2='939062.50' c3='0.00'/>
+				<row3 c1='0.00' c2='0.00' c3='528125.00'/>
+            </InertiaMatrix>
         </Physics>
         <Visualization>
 		   <File type="Inventor">models/0.0^cabeza_links.wrl</File>
@@ -43,6 +48,11 @@
 		<Physics>
             <CoM location="Joint" x="-2,729" y="-0,086" z="67,027" units="mm"/>
             <Mass value="2000" units="g"/>
+            <InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='7599321.84' c2='5.83' c3='65773.25'/>
+				<row2 c1='5.83' c2='8325272.78' c3='-7.43'/>
+				<row3 c1='65773.25' c2='-7.43' c3='11403463.96'/>
+            </InertiaMatrix>
         </Physics>
 	   <Visualization>
 		   <File type="Inventor">models/0.1^cabeza_links.wrl</File>

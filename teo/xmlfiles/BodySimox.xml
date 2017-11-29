@@ -22,6 +22,11 @@
 	   <Physics>
             <CoM location="Joint" x="-2,235" y="-0,979" z="-18,814" units="mm"/>
             <Mass value="1000" units="g"/>
+            <InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='335665140.35' c2='162126.65' c3='11858220.70'/>
+				<row2 c1='162126.65' c2='126531585.32' c3='914091.01'/>
+				<row3 c1='11858220.70' c2='914091.01' c3='263359225.06'/>
+			</InertiaMatrix>
        </Physics>	   
 	   <Child name="FrontalWaist"/>  
 	</RobotNode>
@@ -41,6 +46,11 @@
 	   <Physics>
             <CoM location="Joint" x="32,985" y="-7,876" z="220,667" units="mm"/>
             <Mass value="14235,45" units="g"/>
+            <InertiaMatrix unitsWeight="g" unitsLength="mm">
+				<row1 c1='38530767.35' c2='-134.69' c3='238121.10'/>
+				<row2 c1='-134.69' c2='17354342.61' c3='-0.48'/>
+				<row3 c1='238121.10' c2='-0.48' c3='53231634.32'/>
+            </InertiaMatrix>
        </Physics>	
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-2.stl</File>
