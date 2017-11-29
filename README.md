@@ -38,7 +38,7 @@ For grasping capabilities one EndEffector for each hand was added: **RightHandEE
 
 ## Dynamics
 
-The robot model has the masses, [centers of mass]( https://github.com/roboticslab-uc3m/teo-simox-models/blob/develop/doc/CoMSimox.csv ) and [inertias]( https://github.com/roboticslab-uc3m/teo-software-manual/blob/master/assets/teo-dynamic-information.md) of each part.
+The robot model has the masses, [centers of mass]( https://github.com/roboticslab-uc3m/teo-simox-models/blob/master/doc/teo-center-of-masses.csv ) and [inertias]( https://github.com/roboticslab-uc3m/teo-software-manual/blob/master/assets/teo-dynamic-information.md) of each part.
 
 ### Creator
 
