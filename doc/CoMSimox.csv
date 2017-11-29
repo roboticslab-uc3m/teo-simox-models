@@ -1,4 +1,4 @@
-Name,CollisionLink,X,Y,Z,Mass(g)
+Name,CollisionLink,X(mm),Y(mm),Z(mm),Mass(g)
 RootWaist,Link 0,-10.985,-0.323,33.148,2500
 AxialWaist,Link 1,-2.235,-0.979,-18.814,1000
 FrontalWaist,Link 2,32.985,-7.876,220.667,14235.45
