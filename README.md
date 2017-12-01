@@ -30,7 +30,7 @@ TEO files are located in /teo, the main file is "TEOSimox.xml".
 
 ## Collision models
 
-They have been added and can be found in /teo/xmlfiles/collisionModels. It is a expaded 3D model over the normal of each plane.
+They have been added and can be found in /teo/xmlfiles/collisionModels. It is a expanded 3D model over the normal of each plane. The hands need a simpler model.
 
 ## EndEffectors
 
