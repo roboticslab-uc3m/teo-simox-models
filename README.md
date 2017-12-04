@@ -6,7 +6,7 @@ This repository cointains the necesary files for working with TEO in the ArmarX 
 
 ## Instructions
 
-TEO files are located in /teo, the main file is "TEOSimox.xml".
+TEO files are located in /teo, the main file is `TEOSimox.xml`.
 
 ## Kinematic Chains (RobotNodeSets)
 
