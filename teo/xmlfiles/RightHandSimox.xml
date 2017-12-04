@@ -13,7 +13,7 @@
 		</Joint>	   
 		<Visualization>
 			<File type="Inventor">models/hands/full_wrist.stl</File>
-			<UseAsCollisionModel/>
+			<!--<UseAsCollisionModel/>-->
 		</Visualization>
 		<Physics>
             <CoM location="Joint" x="-2,314" y="0" z="-108,635" units="mm"/>
@@ -24,9 +24,9 @@
 				<row3 c1='114750.55' c2='-8070.00' c3='883178.92'/>
             </InertiaMatrix>
 		</Physics>
-		<!--<CollisionModel>
-			<File type="Inventor">collisionModels/link-10.stl</File>
-		</CollisionModel>-->
+		<CollisionModel>
+			<File type="Inventor">collisionModels/full_wrist_collision.stl</File>
+		</CollisionModel>
 		<Child name="RightThumbProximal"/>
 		<Child name="RightExternalFingerProximal"/>
 		<Child name="RightInternalFingerProximal"/>
@@ -68,8 +68,11 @@
 		</Transform>
 		<Visualization>
 			<File type="Inventor">models/hands/thumb_proximal_phalanx.stl</File>
-			<UseAsCollisionModel/>
+			<!--<UseAsCollisionModel/>-->
 		</Visualization>
+		<CollisionModel>
+			<File type="Inventor">collisionModels/thumb_proximal_phalanx_collision.stl</File>
+		</CollisionModel>
 		<Child name="RightThumbDistal"/>	
 	</RobotNode>
 
@@ -83,8 +86,11 @@
 		</Transform>		
 		<Visualization>
 			<File type="Inventor">models/hands/thumb_distal_phalanx.stl</File>
-			<UseAsCollisionModel/>
+			<!--<UseAsCollisionModel/>-->
 		</Visualization>
+		<CollisionModel>
+			<File type="Inventor">collisionModels/thumb_distal_phalanx_collision.stl</File>
+		</CollisionModel>
 		<Child name="RightThumbTCP"/>
 	</RobotNode>
 	
@@ -108,8 +114,11 @@
 		</Transform>
 		<Visualization>
 			<File type="Inventor">models/hands/index_proximal_phalanx.stl</File>
-			<UseAsCollisionModel/>
+			<!--<UseAsCollisionModel/>-->
 		</Visualization>
+		<CollisionModel>
+			<File type="Inventor">collisionModels/index_proximal_phalanx_collision.stl</File>
+		</CollisionModel>
 		<Child name="RightExternalFingerDistal"/>
 	</RobotNode>
 	
@@ -123,8 +132,11 @@
 		</Transform>		
 		<Visualization>
 			<File type="Inventor">models/hands/index_distal_phalanx.stl</File>
-			<UseAsCollisionModel/>
+			<!--<UseAsCollisionModel/>-->
 		</Visualization>
+		<CollisionModel>
+			<File type="Inventor">collisionModels/index_distal_phalanx_collision.stl</File>
+		</CollisionModel>
 		<Child name="RightExternalTCP"/>
 	</RobotNode>
 	
@@ -148,8 +160,11 @@
 		</Transform>
 		<Visualization>
 			<File type="Inventor">models/hands/index_proximal_phalanx.stl</File>
-			<UseAsCollisionModel/>
+			<!--<UseAsCollisionModel/>-->
 		</Visualization>
+		<CollisionModel>
+			<File type="Inventor">collisionModels/index_proximal_phalanx_collision.stl</File>
+		</CollisionModel>
 		<Child name="RightInternalFingerDistal"/>
 	</RobotNode>
 	
@@ -163,8 +178,11 @@
 		</Transform>		
 		<Visualization>
 			<File type="Inventor">models/hands/index_distal_phalanx.stl</File>
-			<UseAsCollisionModel/>
+			<!--<UseAsCollisionModel/>-->
 		</Visualization>
+		<CollisionModel>
+			<File type="Inventor">collisionModels/index_distal_phalanx_collision.stl</File>
+		</CollisionModel>
 		<Child name="RightInternalTCP"/>
 	</RobotNode>
 	
