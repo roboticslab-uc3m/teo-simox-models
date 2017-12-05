@@ -21,10 +21,10 @@ RightAxialHip,Link 17,0.089,-0.389,-65.985,849.45
 		RightFrontalHip,Link 19,-10.862,-0.006,-161.205,1891.52
 		RightFrontalKnee,Link 20,-6.614,-0.411,-146.413,1948.24
 		RightFrontalAnkle,Link 21,2.577,-13.536,0.182,1503.59
-		RightSaggitalAnkle,Link 22,10.03,0.936,-66,090,3133.4
+		RightSaggitalAnkle,Link 22,10.03,0.936,-66.9,3133.4
 LeftAxialHip,Link 23,0.089,-0.389,-65.985,849.45
 		LeftSaggitalHip,Link 24,-0.11,-0.988,0.214,1454.59
 		LeftFrontalHip,Link 25,-10.862,-0.006,-161.205,1891.52
 		LeftFrontalKnee,Link 26,-6.614,-0.411,-146.413,1948.24
 		LeftFrontalAnkle,Link 27,1.999,13.793,0.035,1503.59
-		LeftSaggitalAnkle,Link 28,10.136,-0.799,-66,090,3133.4
+		LeftSaggitalAnkle,Link 28,10.136,-0.799,-66.9,3133.4
