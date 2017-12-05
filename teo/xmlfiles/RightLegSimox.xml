@@ -168,27 +168,38 @@
 		   <File type="Inventor">models/4.5^pierna_der_links.wrl</File>
 	   </Visualization>
 	   <Physics>
-            <CoM location="Joint" x="10,030" y="0,936" z="-55,989" units="mm"/>
+            <CoM location="Joint" x="10,030" y="0,936" z="-66,090" units="mm"/>
             <Mass value="3133,4" units="g"/>
             <InertiaMatrix unitsWeight="g" unitsLength="mm">
 				<row1 c1='7742029.63' c2='455866.32' c3='-1851656.76'/>
 				<row2 c1='455866.32' c2='14781323.09' c3='-147512.99'/>
 				<row3 c1='-1851656.76' c2='-147512.99' c3='13361747.79'/>
             </InertiaMatrix>
-       </Physics>
-	   <CollisionModel>
-		   <File type="Inventor">collisionModels/link-22.stl</File>
-	   </CollisionModel>
-	   <Child name="RightLegTCP"/>	   
+		</Physics>
+		<CollisionModel>
+			<File type="Inventor">collisionModels/link-22.stl</File>
+		</CollisionModel>
+		<Child name="RightLegJR3"/> 
 	</RobotNode>
 	
+<!--
+	Sensor JR3
+-->
+	<RobotNode name="RightLegJR3">
+		<Transform>
+			<Translation x="0" y="0" z="-78,65"/>		
+		</Transform>
+		<Sensor type="forcetorque" name="RightLegJR3">
+		</Sensor>
+		<Child name="RightLegTCP"/>	
+	</RobotNode>
 <!--
 	TCP
 -->
 	
    <RobotNode name="RightLegTCP">
 	   <Transform>
-		   <DH a="0" d="-123,005" alpha="0" theta="0" units="degree"/> 
+		   <DH a="0" d="-34,355" alpha="0" theta="0" units="degree"/> 
 	   </Transform>	
 	</RobotNode>
 	
