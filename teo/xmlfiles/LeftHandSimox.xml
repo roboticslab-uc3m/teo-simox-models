@@ -32,6 +32,19 @@
 		<Child name="LeftInternalFingerProximal"/>
 		<Child name="LeftArmTCP"/>
 		<Child name="LeftHandGCP"/>
+		<Child name="LeftArmJR3"/>
+	</RobotNode>
+	
+<!--
+	Sensor JR3
+-->
+
+	<RobotNode name="LeftArmJR3">
+		<Transform>
+			<Translation x="0" y="0" z="-71,75"/>		
+		</Transform>
+		<Sensor type="forcetorque" name="LeftArmJR3">
+		</Sensor>
 	</RobotNode>
 	
 <!--
