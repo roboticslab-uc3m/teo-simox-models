@@ -60,23 +60,19 @@
 	   <CollisionModel>
 		   <File type="Inventor">collisionModels/link-4.stl</File>
 	   </CollisionModel>
-	   <Child name="HeadTopTCP"/>
+	   <Child name="Kinect"/>
 	</RobotNode>
 
 <!--
-	TCP
+	Kinect
 -->
 
-	<RobotNode name="HeadTopTCP">
+	<RobotNode name="Kinect">
 		<Transform>
-			<DH a="0" d="59.742" alpha="0" theta="0" units="degree"/>
-			<!--Actually the exact top of the head-->
+			<Translation x="90" y="0" z="57,54"/>
 		</Transform>
-<!--
-		<Child name="TopSideTCP"/>
-		<Child name="LeftSideTCP"/>
-		<Child name="RightSideTCP"/>
--->
+		<Sensor type="Camera" name="Kinect">
+		</Sensor>
 	</RobotNode>
 	
 <!--
