@@ -157,7 +157,7 @@
 	Robot Node Left Arm
 -->
 	
-	<RobotNodeSet name="LeftArmChain" kinematicRoot="LeftFrontalShoulder" tcp="LeftHandPalmTCP">
+	<RobotNodeSet name="LeftArmChain" kinematicRoot="LeftFrontalShoulder" tcp="LeftArmTCP">
 		<Node name="LeftFrontalShoulder"/>
 		<Node name="LeftSaggitalShoulder"/>
 		<Node name="LeftAxialShoulder"/>

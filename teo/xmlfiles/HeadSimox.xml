@@ -61,6 +61,7 @@
 		   <File type="Inventor">collisionModels/link-4.stl</File>
 	   </CollisionModel>
 	   <Child name="Kinect"/>
+	   <Child name="HeadTopTCP"/>
 	</RobotNode>
 
 <!--
@@ -89,13 +90,13 @@
 		   <DH theta="90" d="0" a="0" alpha="0" units="degree"/>
 		</Transform>
 	</RobotNode>
-	
-	<RobotNode name="TopSideTCP">
+-->	
+	<RobotNode name="HeadTopTCP">
 		<Transform>
 		   <DH theta="0" d="37.508" a="0" alpha="0" units="degree"/>	   
 		</Transform>
 	</RobotNode>
--->
+
 	
 <!--
 	Robot Node Head
