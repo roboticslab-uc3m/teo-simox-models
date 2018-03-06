@@ -7,6 +7,7 @@ This repository cointains the necesary files for working with TEO in the ArmarX 
 ## Instructions
 
 TEO files are located in /teo, the main file is `TEOSimox.xml`.
+Names used correspond to those documented [here](https://github.com/roboticslab-uc3m/teo-developer-manual/blob/master/assets/teo-simox-names.pdf) ([permalink](https://github.com/roboticslab-uc3m/teo-developer-manual/blob/f3babf45f65ab6762314ca09ce2fffb190a4ba9b/assets/teo-simox-names.pdf)).
 
 ## Kinematic Chains (RobotNodeSets)
 
@@ -38,7 +39,7 @@ For grasping capabilities one EndEffector for each hand was added: **RightHandEE
 
 ## Dynamics
 
-The robot model has the masses, [centers of mass]( https://github.com/roboticslab-uc3m/teo-simox-models/blob/master/doc/teo-center-of-masses.csv ) and [inertias]( https://github.com/roboticslab-uc3m/teo-software-manual/blob/master/assets/teo-dynamic-information.md) of each part.
+The robot model has the masses, [centers of mass]( https://github.com/roboticslab-uc3m/teo-simox-models/blob/master/doc/teo-center-of-masses.csv ) and [inertias]( https://github.com/roboticslab-uc3m/teo-developer-manual/blob/master/appendix/b-teo-dynamic-information.md ) of each part.
 
 ### Creator
 
