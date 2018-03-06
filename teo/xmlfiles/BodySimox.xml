@@ -11,7 +11,9 @@
 	<RobotNode name="AxialWaist">
 	   <Joint type="revolute">
 		   <Axis x="0" y="0" z="1"/>
-		   <Limits lo="-45" hi="45" units="degree"/>
+		   <Limits lo="-45" hi="45" units="degree"/> 		<!--Initial limits
+		   <Limits lo="-59.3" hi="46.3" units="degree"/> 	<!--Soft limits
+		   <Limits lo="-30" hi="30" units="degree"/>		<!--Human-inspired limits-->
 	   </Joint>  
 	   <Visualization>
 		   <File type="Inventor">models/3.0^torso_simple_links.wrl</File>
@@ -37,8 +39,10 @@
    
 	<RobotNode name="FrontalWaist">
 	   <Joint type="revolute">
-		   <Axis x="0" y="1" z="0"/>
-		   <Limits lo="-10" hi="10" units="degree"/>
+			<Axis x="0" y="1" z="0"/>
+			<Limits lo="-10" hi="10" units="degree"/>		<!--Initial limits
+			<Limits lo="-10.1" hi="90.4" units="degree"/> 	<!--Soft limits
+			<Limits lo="-10.1" hi="90.4" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>
 	   <Visualization>
 		   <File type="Inventor">models/3.1^torso_simple_links.wrl</File>

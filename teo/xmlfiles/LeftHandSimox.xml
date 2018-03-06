@@ -9,7 +9,9 @@
 	<RobotNode name="LeftFrontalWrist">
 		<Joint type="revolute">
 			<Axis x="0" y="1" z="0"/>
-			<Limits lo="-10" hi="100" units="degree"/>
+			<Limits lo="-10" hi="100" units="degree"/> <!--Initial limits
+			<Limits lo="-103.9" 	hi="59.8" units="degree"/> 	<!--Soft limits
+			<Limits lo="-70"		hi="56.9" units="degree"/>	<!--Human-inspired limits-->
 		</Joint>	   
 		<Visualization>
 			<File type="Inventor">models/hands/full_wrist.stl</File>

@@ -11,7 +11,9 @@
    <RobotNode name="LeftAxialHip">
 	   <Joint type="revolute">
 		   <Axis x="0" y="0" z="-1"/>
-		   <Limits lo="-90" hi="90" units="degree"/>
+		   <Limits lo="-90" hi="90" units="degree"/>	<!--Initial limits
+			<Limits lo="-36.3" 	hi=29.1" units="degree"/> 	<!--Soft limits
+			<Limits lo="-5" 	hi="5" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>
 	   <Transform>
 		   <DH a="0" d="0" alpha="90" theta="0" units="degree"/>
@@ -41,7 +43,9 @@
    <RobotNode name="LeftSaggitalHip">
 	   <Joint type="revolute">
 		   <Axis x="-1" y="0" z="0"/>
-		   <Limits lo="-20" hi="20" units="degree"/>
+		   <Limits lo="-20" hi="20" units="degree"/>	<!--Initial limits
+			<Limits lo="-12.5" 	hi="12.5" units="degree"/> 	<!--Soft limits
+			<Limits lo="-12.5" 	hi="12.5" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>  
 	   <Transform>
 		   <DH a="0" d="-92" alpha="0" theta="0" units="degree"/>	   
@@ -71,7 +75,9 @@
    <RobotNode name="LeftFrontalHip">
 	   <Joint type="revolute">
 		   <Axis x="0" y="1" z="0"/>
-		   <Limits lo="-30" hi="45" units="degree"/>
+		   <Limits lo="-30" hi="45" units="degree"/>	<!--Initial limits
+			<Limits lo="-12.5" 	hi="12.5" units="degree"/> 	<!--Soft limits
+			<Limits lo="-12.5" 	hi="12.5" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>	     
 	   <Transform>
 		   <DH a="0" d="0" alpha="0" theta="0" units="degree"/>   
@@ -101,7 +107,9 @@
    <RobotNode name="LeftFrontalKnee">
 	   <Joint type="revolute">
 		   <Axis x="0" y="1" z="0"/>
-		   <Limits lo="-5" hi="80" units="degree"/>				   
+		   <Limits lo="-5" hi="80" units="degree"/>		<!--Initial limits
+			<Limits lo="-58.4" 	hi="71.1" units="degree"/> 	<!--Soft limits
+			<Limits lo="-58.4" 	hi="30" units="degree"/>	<!--Human-inspired limits-->			   
 	   </Joint>
 	   <Transform>
 		   <DH a="0" d="-330" alpha="0" theta="0" units="degree"/>   
@@ -131,7 +139,9 @@
       <RobotNode name="LeftFrontalAnkle">
 	   <Joint type="revolute">
 		   <Axis x="0" y="1" z="0"/>
-		   <Limits lo="-18" hi="20" units="degree"/>		   		   
+		   <Limits lo="-18" hi="20" units="degree"/>	<!--Initial limits
+			<Limits lo="-25.4" 	hi="18.9" units="degree"/> 	<!--Soft limits
+			<Limits lo="-25.4" 	hi="18.9" units="degree"/>	<!--Human-inspired limits-->		   		   
 	   </Joint>
 	   <Transform>
 		   <DH theta="-90" d="-300" a="17.5" alpha="0" units="degree"/>	   
@@ -162,7 +172,9 @@
    <RobotNode name="LeftSaggitalAnkle">
 	   <Joint type="revolute">
 		   <Axis x="1" y="0" z="0"/>
-		   <Limits lo="-18" hi="20" units="degree"/>	
+		   <Limits lo="-18" hi="20" units="degree"/>	<!--Initial limits
+			<Limits lo="-25.6" 	hi="19.2" units="degree"/> 	<!--Soft limits
+			<Limits lo="-25.6" 	hi="19.2" units="degree"/>	<!--Human-inspired limits-->	
 	   </Joint>
 		<Visualization>
 		   <File type="Inventor">models/5.5^pierna_izq_links.wrl</File>

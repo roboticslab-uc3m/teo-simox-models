@@ -11,7 +11,9 @@
 	<RobotNode name="LeftFrontalShoulder">
 	   <Joint type="revolute">
 		   <Axis x="0" y="1" z="0"/>
-		   <Limits lo="-70" hi="45" units="degree"/>
+		   <Limits lo="-70" hi="45" units="degree"/>		<!--Initial limits
+			<Limits lo="-93.5" hi="87.6" units="degree"/> 	<!--Soft limits
+			<Limits lo="-93.5" hi="45.0" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>  
 	   <Visualization>
 		   <File type="Inventor">models/2.0^brazo_izquierdo_links.wrl</File>
@@ -38,7 +40,9 @@
 	<RobotNode name="LeftSaggitalShoulder">
 	   <Joint type="revolute">
 		   <Axis x="1" y="0" z="0"/>
-		   <Limits lo="-15" hi="70" units="degree"/>		   
+		   <Limits lo="-15" hi="70" units="degree"/>"/>		<!--Initial limits
+			<Limits lo="-29.2" 	hi="74.5" units="degree"/> 	<!--Soft limits
+			<Limits lo="-29.6"	hi="75.5" units="degree"/>	<!--Human-inspired limits-->		   
 	   </Joint>
 	   <Transform>
 		   <DH theta="-90" d="0" a="-84" alpha="0" units="degree"/>	   
@@ -70,8 +74,10 @@
    
 	<RobotNode name="LeftAxialShoulder">
 	   <Joint type="revolute">
-		   <Axis x="0" y="0" z="-1"/>
-		   <Limits lo="-50" hi="55" units="degree"/>
+			<Axis x="0" y="0" z="-1"/>
+			<Limits lo="-50" hi="55" units="degree"/>		<!--Initial limits
+			<Limits lo="-82.5" 	hi="54.7" units="degree"/> 	<!--Soft limits
+			<Limits lo="-55"	hi="40" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>
 	   <Transform>
 		   <DH a="0" d="-329.01" alpha="0" theta="0" units="degree"/>
@@ -101,7 +107,9 @@
 	<RobotNode name="LeftFrontalElbow">
 	   <Joint type="revolute">
 		   <Axis x="0" y="1" z="0"/>
-		   <Limits lo="-100" hi="10" units="degree"/>
+		   <Limits lo="-100" hi="10" units="degree"/>		<!--Initial limits
+			<Limits lo="-101.1" 	hi="14.1" units="degree"/> 	<!--Soft limits
+			<Limits lo="-83.5"		hi="5" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>
 	   <Visualization>
 		   <File type="Inventor">models/2.3^brazo_izquierdo_links.wrl</File>
@@ -128,7 +136,9 @@
 	<RobotNode name="LeftAxialWrist">
 	   <Joint type="revolute">
 		   <Axis x="0" y="0" z="-1"/>
-		   <Limits lo="-90" hi="90" units="degree"/>
+		   <Limits lo="-90" hi="90" units="degree"/>		<!--Initial limits
+			<Limits lo="-76.4" 	hi="69.4" units="degree"/> 	<!--Soft limits
+			<Limits lo="-49.4"	hi="74.7" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>
 	   <Transform>
 		   <DH a="0" d="-202" alpha="0" theta="0" units="degree"/>
