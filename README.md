@@ -7,8 +7,7 @@ This repository cointains the necesary files for working with TEO in the ArmarX 
 ## Instructions
 
 TEO files are located in /teo, the main file is `TEOSimox.xml`.
-Names used correspond to those documented [here](https://github.com/roboticslab-uc3m/teo-developer-manual/blob/master/assets/teo-simox-names.pdf) ([permalink](https://github.com/roboticslab-uc3m/teo-developer-manual/blob/f3babf45f65ab6762314ca09ce2fffb190a4ba9b/assets/teo-simox-names.pdf)).
-
+Names used correspond to those documented [here](https://github.com/roboticslab-uc3m/teo-developer-manual/blob/master/assets/teo-link-names.pdf).
 ## Kinematic Chains (RobotNodeSets)
 
 **TEO**: All robot joints.
