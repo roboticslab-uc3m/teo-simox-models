@@ -1,7 +1,7 @@
 <Robot Type="LeftArmSimox" RootNode="InicLeftArm">
 		
 	<RobotNode name="InicLeftArm">
-       <Child name="LeftFrontalShoulder"/>
+       	<Child name="LeftFrontalShoulder"/>
 	</RobotNode>
 	
 <!--
@@ -40,7 +40,7 @@
 	<RobotNode name="LeftSaggitalShoulder">
 	   <Joint type="revolute">
 		   <Axis x="1" y="0" z="0"/>
-		   <Limits lo="-15" hi="70" units="degree"/>"/>		<!--Initial limits
+		   <Limits lo="-15" hi="70" units="degree"/>		<!--Initial limits
 			<Limits lo="-29.2" 	hi="74.5" units="degree"/> 	<!--Soft limits
 			<Limits lo="-29.6"	hi="75.5" units="degree"/>	<!--Human-inspired limits-->		   
 	   </Joint>
@@ -136,9 +136,9 @@
 	<RobotNode name="LeftAxialWrist">
 	   <Joint type="revolute">
 		   <Axis x="0" y="0" z="-1"/>
-		   <Limits lo="-90" hi="90" units="degree"/>		<!--Initial limits
-			<Limits lo="-76.4" 	hi="69.4" units="degree"/> 	<!--Soft limits
-			<Limits lo="-49.4"	hi="74.7" units="degree"/>	<!--Human-inspired limits-->
+		   <!--<Limits lo="-90" hi="90" units="degree"/>		<!--Initial limits
+			<Limits lo="-76.4" 	hi="69.4" units="degree"/> 	<!--Soft limits-->
+			<Limits lo="-76.4"	hi="90" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>
 	   <Transform>
 		   <DH a="0" d="-202" alpha="0" theta="0" units="degree"/>

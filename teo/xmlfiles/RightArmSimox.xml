@@ -136,9 +136,9 @@
 	<RobotNode name="RightAxialWrist">
 	   <Joint type="revolute">
 		   <Axis x="0" y="0" z="-1"/>
-		   <Limits lo="-90" hi="90" units="degree"/>	<!--Initial limits
-			<Limits lo="-49.4" 	hi="74.7" units="degree"/> 	<!--Soft limits
-			<Limits lo="-49.4" 	hi="74.7" units="degree"/>	<!--Human-inspired limits-->
+		<!--   <Limits lo="-90" hi="90" units="degree"/>	<!--Initial limits
+		<Limits lo="-49.4" 	hi="74.7" units="degree"/> 	<!--Soft limits-->
+		<Limits lo="-90" 	hi="74.7" units="degree"/>	<!--Human-inspired limits-->
 	   </Joint>
 	   <Transform>
 		   <DH a="0" d="-202" alpha="0" theta="0" units="degree"/>
